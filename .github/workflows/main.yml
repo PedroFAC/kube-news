@@ -46,7 +46,7 @@ jobs:
     - name: Deploy to Kubernetes cluster
       uses: Azure/k8s-deploy@v3.1
       with:
-        images: pedrofac/kube=news:${{github.run_number}}
+        images: pedrofac/kube-news:${{github.run_number}}
         manifests: |
           k8s/deployment.yaml
 
